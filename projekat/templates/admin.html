@@ -11,7 +11,9 @@
               <tr>
                 <th scope="col">Ime</th>
                 <th scope="col">Email</th>
+                {% if ( rolaProvera == True) %}
                 <th scope="col">Sifra</th>
+                {% endif %}
                 <th scope="col">Rola</th>
                 <th scope="col">Ime psa</th>
                 {% if ( rolaProvera == True) %}
@@ -25,7 +27,9 @@
            <!--Nece da ucita iz baze vrv problem ovde -->
                 <td>{{vlasnici.ime}}</td>
                 <td>{{vlasnici.email}}</td>
+                {% if ( rolaProvera == True) %}
                 <td>{{vlasnici.lozinka}}</td>
+                {% endif %}
                 <td>{{vlasnici.rola}}</td>
                 <td>{{vlasnici.ime_psa}}</td>
               {% if ( rolaProvera == True) %}
