@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff1e6 !important;
+}
+
+.meni{
+	background-color: #cb997e;
+}
+
+.meni a {
+	color: #fff;
+}
+
+.meni a:hover {
+	color: #8f8f70;
+}
+
+.logo {
+	height: 50px;
+	padding-right: 20px;
+}
+.meni .logo-text a{
+	color: #8f8f70 !important;
+	text-shadow: 1px 1px 3px #f1f1f1;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.meni .logo-text a:hover {
+	color: #b7b7a4 !important;
+}
+
+.main-nav {
+	background-color: #cb997e !important;
+}
+
+.main-cta-btn {
+	background-color: #b7b7a4;
+	border: 1px solid #8f8f70;
+	padding: 10px;
+	color: #fff !important;
+	transition: 0.7s;
+	text-decoration: none;
+} 
+
+.main-cta-btn:hover {
+	color: #8f8f70 !important;
+	background-color: #565643;
+	text-decoration: none;
+	border: 1px solid #8f8f70; /*ja sam dodao*/
+}
+
+.kreiranje {
+	padding: 20px;
+	color: #565643;
+}
+
+.prijava {
+	padding: 20px;
+	color: #565643;
+}
+
+.login-section h1 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #8f8f70;
+}
+
+#dugme {
+	background-color: #b7b7a4;
+	border: 1px solid #8f8f70;
+	padding: 10px;
+	color: #fff !important;
+	transition: 0.7s;
+	text-decoration: none;
+}
+
+#futer{
+	
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="login-section" id="#">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="kreiranje">
+					<h1>Kreiraj nalog</h1><br>
+			      		<form action="{{ url_for('korisnik_novi')}}" method="POST" onSubmit="return validateForm()">
+			            <input id="uname" type="text" name="ime" placeholder="Ime"><br><br>
+			            <input id="uname" type="email" name="email" placeholder="Email"><br><br>
+			            <input id="uname" type="password" name="lozinka" placeholder="Lozinka"><br><br>
+			            <label>Admin</label>
+			            <input type="radio" name="rola" value="admin">&nbsp&nbsp&nbsp
+			            <label>Vlasnik</label>
+			            <input type="radio" name="rola" value="vlasnik"><br>
+			            <input type="text" name="ime_psa" placeholder="Ime psa"><br><br>
+			            <button id="dugme" type="submit" onclick="dugme()" value="OK">Kreiraj nalog</button>
+			    		</form>	
+	      </div>
+	      <div class="col-md-4"></div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

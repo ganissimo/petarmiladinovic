@@ -1,0 +1,354 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff1e6 !important;
+}
+
+.meni{
+	background-color: #cb997e;
+}
+
+.meni a {
+	color: #fff;
+}
+
+.meni a:hover {
+	color: #8f8f70;
+}
+
+.logo {
+	height: 50px;
+	padding-right: 20px;
+}
+.meni .logo-text a{
+	color: #8f8f70 !important;
+	text-shadow: 1px 1px 3px #f1f1f1;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.meni .logo-text a:hover {
+	color: #b7b7a4 !important;
+}
+
+.main-nav {
+	background-color: #cb997e !important;
+}
+
+.main-cta-btn {
+	background-color: #b7b7a4;
+	border: 1px solid #8f8f70;
+	padding: 10px;
+	color: #fff !important;
+	transition: 0.7s;
+	text-decoration: none;
+} 
+
+.main-cta-btn:hover {
+	color: #8f8f70 !important;
+	background-color: #565643;
+	text-decoration: none;
+	border: 1px solid #8f8f70; /*ja sam dodao*/
+}
+
+.hero-section {
+	background-image: url('../images/home.jpg');
+	padding-top: 60px;
+	padding-bottom: 115px;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-section h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 65px;
+	margin-bottom: 20px;
+	text-shadow: 2px 1px 3px #000;
+	border-top: 1px solid white;
+}
+
+.hero-section p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-shadow: 2px 1px 3px #000;
+}
+
+.hero-section a {
+	background-color: #b7b7a4;
+	border: 1px solid #565643;
+	padding: 10px;
+	color: #fff;
+	transition: 0.7s;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.services-section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.services-section h3{
+	text-align: center;
+	color: #565643;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.services-section h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #343434;
+	font-weight: 900;
+}
+
+.services-section p{
+	text-align: center;
+	color: #343434;
+}
+
+.services-section .service-item {
+	background-color: #565643;
+	-webkit-box-shadow: 0 0 33px 7px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0px 33px 7px rgba(0,0,0,0.6);
+	box-shadow: 0 0 33px 7px rgba(0,0,0,0.6);
+	color: #fff;
+	text-align: center;
+	padding: 40px;
+	padding-bottom: 60px;
+	transition: 0.5s;
+	margin-top: 50px;
+	height: 300px;
+}
+
+.services-section .service-item:hover {
+	background-color: #cb997e;
+	cursor: pointer;
+	margin-top: 30px;
+	color: #565643;
+}
+
+.services-section .service-item img{
+	height: 80px;
+}
+
+.services-section .service-item h4 {
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.services-section .service-item p {
+	color: #fff;
+}
+
+.services-section .service-item a {
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 5px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.works {
+	text-align: center;
+	background-image: url("../images/dog-hotel.jpg");
+	background-size: cover;
+	padding-top: 60px;
+	color: #fff;
+}
+
+.works img {
+	border: 2px solid #fff;
+	display: block;
+ 	margin-left: 25px;
+ 	margin-righ: 25px;
+
+  width: 90%;
+}
+
+.works a {
+	padding-bottom: 30px;
+	display: inline-block;
+}
+
+.works h3{
+	text-align: center;
+	color: #8f8f70;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.works h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #343434;
+	font-weight: 900;
+}
+
+.works p{
+	text-align: center;
+	color: #343434;
+	text-shadow: 1px 1px 3px #f1f1f1;
+}
+
+.customers {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+.customers .testimonials {
+	background-size: cover;
+	background-position: center;
+	height: 360px;
+	color: #fff;
+}
+
+.customers .testimonials .testimonial-inner {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	padding: 25px;
+	position: relative;
+}
+
+.customers .testimonials .testimonial-inner .testimonial-content {
+	position: absolute;
+	bottom: 15px;
+}
+
+.customers .testimonials .testimonial-inner .testimonial-content:before {
+	content: "";
+	width: 3px;
+	height: 55px;
+	background-color: #fff;
+	position: absolute;
+	left: -10px;
+	top: 5px;
+}
+
+.about-section {
+	background-image: url("../images/about-us.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-shadow: 2px 1px 3px #000;
+}
+
+.about-section h3{
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #fff;
+	padding-bottom: 15px;
+	margin-right: 100px;
+}
+
+.about-section h3:before{
+	content: "";
+	display: inline-block;
+	background-color: #b7b7a4;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: -2px;
+}
+
+.about-section l {
+	margin-left: 20px;
+
+}
+
+.about-section .contact {
+	font-weight: bold;
+	background-color: rgba(191, 112, 86, 0.5);
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+.school-section h3{
+	text-align: center;
+	color: #565643;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.school-section h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #343434;
+	font-weight: 900;
+}
+
+.school-section p{
+	text-align: center;
+	color: #343434;
+}
+
+.school-section {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.school-section .school-inner{
+	background-image: url("../images/ruke.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	margin-top: 40px;
+
+}
+
+.school-section .school-inner .school-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	padding: 50px;
+	color: #fff;
+}
+
+.school-section .school-inner .school-overlay .conference-date span {
+	background-color: #565643;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	margin-right: 8px;
+	color: #fff;
+}
+
+.school-section .school-inner .school-overlay h4 {
+	text-transform: uppercase;
+}
+
+.school-section .school-inner .school-overlay p {
+	color: #fff;
+}
+
+.school-section .school-inner .school-overlay .main-cta-btn {
+	margin-top: 20px;
+	display: inline-block;
+
+}
+
+#logout1 {
+	height: 30px;
+}
+

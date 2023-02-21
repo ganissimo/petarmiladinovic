@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+ <div class="row">
+	<div class="col-md-4"></div>
+				<div class="col-md-4">
+						<div class="prijava">
+							<h1>Prijavi se</h1><br>
+							<form action="{{ url_for('render_login') }}" method="POST">
+						        <input type="email" name="email" placeholder="Email"><br><br>
+						        <input type="password" name="lozinka1" placeholder="Šifra"><br><br>
+										<button id="dugme" type="submit">Prijavi se</button>
+										<a class="main-cta-btn" href="{{url_for('render_register')}}">Kreiraj nalog</a>
+				      </form>	
+						</div>
+						<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

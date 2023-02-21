@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<title>Hotel</title>
+</head>
+<body>
+
+<div class="meni">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  	<img src="../static/images/logo1.png" class="logo">
+		  	<span class="logo-text">
+		    <a class="navbar-brand" href="#">DogHotel</a>
+		    </span>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="#sekcija1">Pocetna</a>
+							</li>
+								<a class="nav-link" href="#sekcija2">Lokacije</a>
+							</li>
+								<a class="nav-link" href="#sekcija3">Aktivnosti</a>
+							</li>
+								<a class="nav-link" href="#sekcija4">Zaposleni</a>
+							</li>
+								<a class="nav-link" href="#sekcija5">O nama</a>
+							</li>
+								<a class="nav-link" href="#sekcija6">Kontakt</a>
+							</li>
+								<a class="nav-link" href="{{url_for('render_vlasnici')}}">Vlasnici</a>
+              </li>
+								<a class="nav-link" href="{{url_for('logout')}}">
+                  <img id="logout1" src="../static/images/logout.png">
+                </a>
+						</ul>
+					</div>
+		    </div>
+		</div>
+	</nav>
+</div>
+
+<div class="hero-section" id="sekcija1">
+	<div class="slika">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Hotel za pse</h1>
+					<p>Dobrodosli na prvi sajt koji nudi smestaj za vase pse.</p>
+					<a class="main-cta-btn"href="#sekcija5">Vise o nama</a>
+				</div>
+
+				<div class="col-md-6">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="services-section" id="sekcija2">
+	<h3>Lokacije</h3>
+	<h2>Nase usluge</h2>
+	<p>Ovde nas mozete posetiti sa svojim ljubimcem</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="service-item">
+					<img src="../static/images/ikonica.png">
+					<h4>Dog care - Pansion Za Pse</h4>
+					<p id="p1">Babicki Odredi 130, Niš</p>
+					<a href="rezervacija.html">Rezerviši</a>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="service-item">
+					<img src="../static/images/ikonica.png">
+					<h4>Pansion Stevanovic</h4>
+					<p>Visočka 21, Niš</p>
+					<a href="rezervacija.html">Rezerviši</a>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="service-item">
+					<img src="../static/images/ikonica.png">
+					<h4>Pansion za pse</h4>
+					<p>Rajićeva 12, Niš</p>
+					<a href="rezervacija.html">Rezerviši</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="works" id="sekcija3">
+	<h3>Prilog</h3>
+	<h2>Dnevne aktivnosti</h2>
+	<p>Ovako provode vreme ljubimci koji nas posećuju.</p>
+
+	<a href="https://www.youtube.com/watch?v=HMEgANrmx-U" data-toggle="modal" data-target="#videoModal">
+		<img src="../static/images/video.png">
+	</a>
+</div>
+
+<div class="customers" id="sekcija4">
+	<div class="container">
+		<h2>Zaposleni</h2>
+
+		<div class="row">
+			<div class="col-md-3">
+				<div class="testimonials" style="background-image: url('../static/images/trener1.jpg')">
+					<div class="testimonial-inner">
+						<div class="testimonial-content">
+							<h4>Dreser</h4>
+							<h5>Miroslav Milovanović</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="testimonials" style="background-image: url('../static/images/trener.jpg')">
+					<div class="testimonial-inner">
+						<div class="testimonial-content">
+							<h4>Dreser</h4>
+							<h5>Danica Ranđelović</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="testimonials" style="background-image: url('../static/images/veterinar.jpg');">
+					<div class="testimonial-inner">
+						<div class="testimonial-content">
+							<h4>Veterinar</h4>
+							<h5>Milica Andjelović</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="testimonials" style="background-image: url('../static/images/veterinar1.jpg')">
+					<div class="testimonial-inner">
+						<div class="testimonial-content">
+							<h4>Veterinar</h4>
+							<h5>Lazar Popović</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="about-section" id="sekcija5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h3>O nama</h3>
+				<h2>Mi se staramo da vaši psi budu negovani, dresirani i srećni.</h2>
+
+				<ul>
+					<li>Pružamo Vam luksuzan smeštaj.</li>
+					<li>Vrhunsku negu pasa.</li>
+					<li>Profesionalno dresiranje.</li>
+					
+				</ul>
+			</div>
+
+			<div class="col-md-6">
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<div class="school-section" id="sekcija6">
+	<h3>Pitajte nas</h3>
+	<h2>Kontakt</h2>
+	<p>Ovde nam se možete obratiti putem mobilnog telefona i mail-a</p>
+	
+	<div class="container">
+		<div class="school-inner">
+			<div class="school-overlay">
+
+				<p class="conference-date"><span>Veze</span>Feb 21, 2023</p>
+				<h4>060 700 7070</h4>
+				<h4>doghotel@gmail.com</h4>
+				<p>Naš tim će se potruditi da u najkraćem roku odgovori <br>na vaša pitanja.</p>
+				<a href="www.gmail.com" class="main-cta-btn">doghotel@gmail.com</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="text-center text-white" style="background-color: #cb997e;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a 
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i>
+        <img src="../static/images/facebook.png" height="30px">
+  		</a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ><img src="../static/images/twitter.png" height="30px"></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ><img src="../static/images/youtube.png" height="30px"></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ><img src="../static/images/instagram.png" height="30px"></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ><img src="../static/images/linkedin.png" height="30px"></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ><img src="../static/images/github.png" height="30px"></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    060 700 7070 © 2023 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">Mojlink.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+</html>

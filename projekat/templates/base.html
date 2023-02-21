@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/style10.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<script>
+  function validateForm() {
+      var uname=document.getElementById("uname").value;
+      if (uname==""){
+          alert("Morate popuniti sva polja!");
+          return false;
+      }
+  }
+</script>
+
+	<title>OSNOVA</title>
+</head>
+<body>
+
+<div class="meni">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  	<img src="../static/images/logo1.png" class="logo">
+		  	<span class="logo-text">
+		    <a class="navbar-brand" href="index.html">DogHotel</a>
+		    </span>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="{{url_for('render_home')}}">Pocetna</a>
+							</li>
+								<a class="nav-link" href="index.html#sekcija2">Lokacije</a>
+							</li>
+								<a class="nav-link" href="index.html#sekcija3">Aktivnosti</a>
+							</li>
+								<a class="nav-link" href="index.html#sekcija4">Zaposleni</a>
+							</li>
+								<a class="nav-link" href="index.html#sekcija5">O nama</a>
+							</li>
+								<a class="nav-link" href="index.html#sekcija6">Kontakt</a>
+							</li>
+                <a class="nav-link" href="{{url_for('render_vlasnici')}}">Vlasnici</a>
+              </li>
+                <a class="nav-link" href="{{url_for('logout')}}">
+                  <img id="logout" src="../static/images/logout.png">
+                </a>
+              </li>
+						</ul>
+					</div>
+		    </div>
+		</div>
+	</nav>
+</div>
+{% block content %}
+
+{% endblock %}
+<footer id="futer" class="text-center text-white" style="background-color: #cb997e;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a 
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i>
+        <img src="../static/images/facebook.png" height="30px">
+  		</a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ><img src="../static/images/twitter.png" height="30px"></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ><img src="../static/images/youtube.png" height="30px"></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ><img src="../static/images/instagram.png" height="30px"></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ><img src="../static/images/linkedin.png" height="30px"></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ><img src="../static/images/github.png" height="30px"></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    060 700 7070 © 2023 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">Mojlink.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

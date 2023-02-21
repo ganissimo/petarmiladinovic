@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="login-section" id="#">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="kreiranje">
+                    <h1>Izmeni nalog</h1><br>
+                        <form action="{{ url_for('vlasnik_izmena', id=vlasnik.id) }}" method="POST">
+                        <input id="uname" type="text" name="ime" placeholder="Ime" value="{{vlasnik.ime}}"><br><br>
+                        <input id="uname" type="email" name="email" placeholder="Email" value="{{vlasnik.email}}"><br><br>
+                        <input id="uname" type="password" name="lozinka" placeholder="Lozinka" value="{{vlasnik.lozinka}}"><br><br>
+                        <label>Admin</label>
+                        <input type="radio" name="rola" value="admin" value="{{vlasnik.admin}}">&nbsp&nbsp&nbsp
+                        <label>Vlasnik</label>
+                        <input type="radio" name="rola" value="vlasnik" value="{{vlasnik.vlasnik}}" checked="checked"><br>
+                        <input type="text" name="ime_psa" placeholder="Ime psa" value="{{vlasnik.ime_psa}}"><br><br>
+                        <button id="dugme" type="submit">Izmeni</button>
+                        </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

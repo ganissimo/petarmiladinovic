@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row my-5 justify-content-end">
+        
+    </div>
+    <div class="row">
+        <table class="table table-warning table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Ime</th>
+                <th scope="col">Email</th>
+                <th scope="col">Sifra</th>
+                <th scope="col">Rola</th>
+                <th scope="col">Ime psa</th>
+            
+              </tr>
+            </thead>
+            <tbody>
+              {% for vlasnici in vlasnik %}
+              <tr>
+           <!--Nece da ucita iz baze vrv problem ovde -->
+                <td>{{vlasnici.ime}}</td>
+                <td>{{vlasnici.email}}</td>
+                <td>{{vlasnici.lozinka}}</td>
+                <td>{{vlasnici.rola}}</td>
+                <td>{{vlasnici.ime_psa}}</td>
+              
+                
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+</div>
+{% endblock %}
